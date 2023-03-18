@@ -18,6 +18,9 @@ const Navbar = () => {
             <li className="mr-4">
               <Link  href="/meny">Meny</Link>
             </li>
+            <li className="mr-4">
+              <Link  href="/hallbarhet">Hållbart</Link>
+            </li>
           
             <li className="mr-4">
               <Link href="/omoss">Om oss</Link>

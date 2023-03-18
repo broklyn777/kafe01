@@ -36,6 +36,9 @@ const HamburgerMenu: React.FC = () => {
             <a onClick={toggleMenu}>Meny</a>
           </Link>
         </li>
+          <li className="mr-4">
+              <Link  href="/hallbarhet">Hållbart</Link>
+            </li>
         {/* <li>
           <Link legacyBehavior href="/galleri">
             <a onClick={toggleMenu}>Galleri</a>
