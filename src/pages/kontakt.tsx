@@ -1,60 +1,40 @@
-import { useState } from 'react';
+import ContactForm from '@/components/ContactForm';
 
-import { google } from 'googleapis';
-import { getOAuth2Token } from './api/googleAuth';
 
-const ContactPage = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+const ContactPage = () => (
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+    <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+      <h1 className="text-4xl font-bold mb-10">Kontakt</h1>
+      {/* Lägg till kod här för att visa kontaktinformation för kaféet, inklusive adress, telefonnummer, e-postadress och öppettider. Lägg även till ett kontaktformulär så att besökare enkelt kan skicka frågor eller bokningsförfrågningar */}
 
-    try {
-      const accessToken = await getOAuth2Token();
-      
-      const gmail = google.gmail({ version: 'v1', auth: accessToken });
-      const emailContent = [
-        `From: ${email}`,
-        'To: your-email@example.com',
-        'Content-Type: text/plain; charset=utf-8',
-        'MIME-Version: 1.0',
-        `Subject: Kontaktformulär - ${name}`,
-        '',
-        `Namn: ${name}`,
-        `E-post: ${email}`,
-        '',
-        `Meddelande:`,
-        message
-      ].join('\n');
-
-      const response = await gmail.users.messages.send({
-        userId: 'me',
-        requestBody: {
-          raw: Buffer.from(emailContent).toString('base64').replace(/\+/g, '-').replace(/\//g, '_')
-        }
-      });
-
-      if (response.status === 200) {
-        // Visa meddelande om att e-postmeddelandet har skickats framgångsrikt
-      } else {
-        // Hantera fel, t.ex. visa ett felmeddelande för användaren
-      }
-    } catch (error) {
-      // Hantera fel, t.ex. visa ett felmeddelande för användaren
-    }
-  };
-
-  return (
-    <div className="container mx-auto px-4">
-      <h1 className="text-4xl font-semibold mb-8">Kontakt</h1>
-
-      <form onSubmit={handleSubmit}>
-        {/* Din befintliga kod för formuläret */}
-      </form>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div>
+      <h2 className="text-2xl font-bold mb-4">Kontaktinformation</h2>
+      <p>
+        <strong>Adress:</strong><br />
+        Kafé Exempelgatan 123<br />
+        12345 Stockholm<br />
+        Sverige
+      </p>
+      <p className="mt-4">
+        <strong>Telefon:</strong> +46 123 456 789
+      </p>
+      <p className="mt-4">
+        <strong>E-post:</strong> info@kafeexempel.se
+      </p>
+      <p className="mt-4">
+        <strong>Öppettider:</strong><br />
+        Måndag - Fredag: 08:00 - 18:00<br />
+        Lördag - Söndag: 10:00 - 16:00
+      </p>
     </div>
-  );
-};
+    <div>
+      <h2 className="text-2xl font-bold mb-4">Kontaktformulär</h2>
+      <ContactForm/>
+      {/* Lägg till ett kontaktformulär här, med fält för namn, e-post, ämne och meddelande */}
+    </div>
+  </div>
+</div>
 
+);
 export default ContactPage;

@@ -3,10 +3,15 @@
 @tailwind utilities;
 
 .bg-brown-800 {
-    background-color: rgb(101, 67, 33);
+    background-color: #654321
     /* Anpassa RGB-värdena för att få den önskade bruna nyansen */
 }
-
+input:focus {
+    outline-color:#83684D;
+}
+textarea:focus {
+    outline-color: #83684D;
+}
 .hamburger {
     width: 24px;
     height: 16px;
