@@ -1,8 +1,17 @@
+import BackgroundVideo from '@/components/BackgroundVideo';
 import Link from 'next/link';
 import Specialties from '../components/Specialties';
 
 const HomePage = () => (
   <>
+        {/* <BackgroundVideo videoSrc="/img/cafe-video02.mp4">  
+        <div className="text-center">
+          <h1 className="text-5xl font-bold mb-4 text-white z-20">Hållbarhet på Kaféet</h1>
+          <p className="text-2xl text-white">
+            Vi är engagerade i att minska vår miljöpåverkan och erbjuda en hållbar och ansvarsfull kaféupplevelse.
+          </p>
+        </div>
+      </BackgroundVideo> */}
     <section className="bg-cover bg-center h-screen text-white" style={{ backgroundImage: 'url(/img/cafe02.jpg' }}>
       <div className="container mx-auto px-4 h-full flex items-center justify-center">
         <div className="text-center">

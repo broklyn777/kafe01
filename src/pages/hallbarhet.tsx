@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 const SustainabilityPage = () => (
   <>
+  
     <section className="bg-cover bg-center h-screen text-white" style={{ backgroundImage: 'url(/img/cafe05.jpg)' }}>
       <div className="container mx-auto px-4 h-full flex items-center justify-center">
         <div className="text-center">
