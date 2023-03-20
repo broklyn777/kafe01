@@ -1,3 +1,7 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/jsx-no-undef */
+import Image from 'next/image';
 import React from 'react';
 
 const MenuPage = () => {
@@ -22,15 +26,119 @@ const MenuPage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-semibold mb-8 text-center">Kaffe och drycker</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="group">
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300">
+    {/* Image or video */}
+    <img src="/img/cafe03.jpg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
+    {/* Content */}
+    <div className="p-4">
+      <h3 className="text-xl font-semibold mb-2">Espresso</h3>
+      <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
+      {/* Price */}
+      <div className="absolute top-0 right-0 bg-green-500 text-white px-2 py-1 text-sm font-bold rounded-bl-md">
+        $3.50
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* --------- goood------- */}
+<div className="group">
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 transform group-hover:scale-105">
+    {/* Image or video */}
+    <img src="/img/cafe01.jpg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
+    {/* Content */}
+    <div className="p-4">
+      <h3 className="text-xl font-semibold mb-2">Espresso</h3>
+      <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
+      {/* Price */}
+      <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
+        $3.50
+      </div>
+    </div>
+  </div>
+</div>
+<div className="group">
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 transform group-hover:scale-105">
+    {/* Image or video */}
+  <video src="/video/cafe-video04.mp4" className="w-full h-48 object-cover object-center rounded-lg" autoPlay loop muted playsInline>
+</video>
+    {/* Content */}
+    <div className="p-4">
+      <h3 className="text-xl font-semibold mb-2">Espresso</h3>
+      <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
+      {/* Price */}
+      <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
+        $3.50
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
             {/* Coffee item */}
-            <div className="bg-white p-6 rounded shadow">
-              <h3 className="text-xl font-semibold mb-4">Espresso</h3>
-              <p>En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
-            </div>
+<div className="card">
+  <img src="/img/cafe04.jpeg" alt="Cappuccino" />
+  <h3 className="text-xl font-semibold mb-2">Cappuccino</h3>
+  <p>
+    En klassisk italiensk kaffe gjord med espresso, ångad mjölk och ett lätt lager av mjölkskum. Perfekt för en mysig
+    eftermiddag.
+  </p>
+  <div className="mt-4">
+    <span className="text-xl font-bold">39 kr</span>
+  </div>
+</div>
+{/* Coffee  item */}
+
+<div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-h-96 flex flex-col justify-between transition-transform duration-200 ease-in-out hover:-translate-y-1 group">
+ <img className="w-full h-48 object-cover object-center rounded-lg" src="/img/cafe04.jpeg" alt="Coffee 1" />
+<div className=' group-hover:bg-gray-200 rounded-lg'>
+  <h3 className="text-xl font-semibold mb-2">Cappuccino</h3>
+  <p className=''>
+    En klassisk italiensk kaffe gjord med espresso, ångad mjölk och ett lätt lager av mjölkskum. Perfekt för en mysig
+    eftermiddag.
+  </p>
+
+  <div className="mt-4">
+    <span className="text-xl font-bold transition-colors duration-200 ease-in-out  p-1 rounded">39 kr</span>
+  </div>
+    </div>
+</div>
+
+{/* Coffee video item */}
+<div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-h-96 flex flex-col justify-between transition-transform duration-200 ease-in-out hover:-translate-y-1 group">
+ <video src="/video/cafe-video02.mp4" className="w-full h-48 object-cover object-center rounded-lg" autoPlay loop muted playsInline>
+</video>
+
+  <h3 className="text-xl font-semibold mb-2">Cappuccino</h3>
+  <p>
+    En klassisk italiensk kaffe gjord med espresso, ångad mjölk och ett lätt lager av mjölkskum. Perfekt för en mysig
+    eftermiddag.
+  </p>
+  <div className="mt-4">
+    <span className="text-xl font-bold transition-colors duration-200 ease-in-out group-hover:bg-green-500 p-1 rounded">39 kr</span>
+  </div>
+</div>
+
+
+
           {/* Coffee item - Cappuccino */}
 <div className="bg-white p-6 rounded shadow">
   <h3 className="text-xl font-semibold mb-4">Cappuccino</h3>
   <p>En klassisk cappuccino, gjord med en perfekt blandning av espresso, ångad mjölk och mjölkskum.</p>
+</div>
+{/* Coffee item */}
+<div className="bg-white shadow-md rounded-lg p-6 m-4 w-full max-h-96 flex flex-col justify-between transition-transform duration-200 ease-in-out hover:-translate-y-1">
+  <img className="w-full h-48 object-cover object-center rounded-lg" src="/img/cafe04.jpeg" alt="Coffee 1" />
+  <h3 className="text-xl font-semibold mb-2">Cappuccino</h3>
+  <p>
+    En klassisk italiensk kaffe gjord med espresso, ångad mjölk och ett lätt lager av mjölkskum. Perfekt för en mysig
+    eftermiddag.
+  </p>
+  <div className="mt-4">
+    <span className="text-xl font-bold">39 kr</span>
+  </div>
 </div>
 
 {/* Coffee item - Latte */}
@@ -75,6 +183,22 @@ const MenuPage = () => {
   <h3 className="text-xl font-semibold mb-4">Kanelbulle</h3>
   <p>En klassisk svensk kanelbulle, fylld med kanel och socker, toppad med pärlsocker.</p>
 </div>
+<div className="bg-white shadow-md rounded-md p-6 my-4">
+  <Image className="w-full h-48 object-cover rounded-md mb-4" 
+  src="/img/kanelbulle01.jpg" 
+  width={200}
+  height={100}
+  alt="Bakverk 1" />
+  <h3 className="text-xl font-semibold mb-2">Kardemummabulle</h3>
+  <p>
+    En klassisk svensk kanelbulle med en twist. Vår kardemummabulle är fylld med smör, socker och kardemumma, som ger den en
+    unik och utsökt smak.
+  </p>
+  <div className="mt-4">
+    <span className="text-xl font-bold">45 kr</span>
+  </div>
+</div>
+
 
 {/* Bakverk - Prinsesstårta */}
 <div className="bg-white p-6 rounded shadow">
