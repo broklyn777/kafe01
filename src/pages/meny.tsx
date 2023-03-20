@@ -36,7 +36,7 @@ const MenuPage = () => {
       <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
       {/* Price */}
       <div className="absolute top-0 right-0 bg-green-500 text-white px-2 py-1 text-sm font-bold rounded-bl-md">
-        $3.50
+        67 SEK
       </div>
     </div>
   </div>
@@ -53,7 +53,7 @@ const MenuPage = () => {
       <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
       {/* Price */}
       <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
-        $3.50
+        48 SEK
       </div>
     </div>
   </div>
@@ -69,7 +69,7 @@ const MenuPage = () => {
       <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
       {/* Price */}
       <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
-        $3.50
+        55 SEK
       </div>
     </div>
   </div>
