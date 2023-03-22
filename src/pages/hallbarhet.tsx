@@ -1,5 +1,6 @@
 // pages/sustainability.tsx
 
+
 import Link from 'next/link';
 
 const SustainabilityPage = () => (
@@ -39,6 +40,7 @@ const SustainabilityPage = () => (
           </Link>
         </div>
       </div>
+   
     </section>
   </>
 );

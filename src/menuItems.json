@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Latte",
+    "description": "En krämig latte, gjord med en rik espresso och toppad med ångad mjölk för en len och mild smak.",
+    "price": 67,
+    "mediaSrc": "/img/cafe03.jpg",
+    "mediaType": "image"
+  },
+  {
+    "name": "Cappuccino",
+    "description": "En klassisk cappuccino, med en perfekt balans mellan stark espresso och mjuk, fluffig mjölkskum.",
+    "price": 65,
+    "mediaSrc": "/video/cafe-video02.mp4",
+    "mediaType": "video"
+  }
+]

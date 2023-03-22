@@ -26,40 +26,45 @@ const MenuPage = () => {
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-semibold mb-8 text-center">Kaffe och drycker</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="group">
+
+  
+           <div className='group'>      
   <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300">
     {/* Image or video */}
     <img src="/img/cafe03.jpg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
     {/* Content */}
     <div className="p-4">
-      <h3 className="text-xl font-semibold mb-2">Espresso</h3>
-      <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
+      <h3 className="text-xl font-semibold mb-2">Latte</h3>
+      <p className="text-gray-700">En krämig latte, gjord med en rik espresso och toppad med ångad mjölk för en len och mild smak.</p>
       {/* Price */}
-      <div className="absolute top-0 right-0 bg-green-500 text-white px-2 py-1 text-sm font-bold rounded-bl-md">
+      {/* <div className="absolute top-0 right-0 bg-green-500 text-white px-2 py-1 text-sm font-bold rounded-bl-md"> */}
+      <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
         67 SEK
       </div>
     </div>
   </div>
 </div>
 
-{/* --------- goood------- */}
-<div className="group">
-  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 transform group-hover:scale-105">
+
+ <div className="group">   
+  {/* <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 transform group-hover:scale-105"> */}
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 ">
     {/* Image or video */}
-    <img src="/img/cafe01.jpg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
+    <img src="/img/gron-smoothie.jpeg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
     {/* Content */}
     <div className="p-4">
-      <h3 className="text-xl font-semibold mb-2">Espresso</h3>
-      <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
+      <h3 className="text-xl font-semibold mb-2">Grön Smoothie</h3>
+      <p className="text-gray-700">En näringsrik grön smoothie gjord med färsk spenat, banan, äpple, ingefära och is.</p>
       {/* Price */}
       <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
         48 SEK
       </div>
     </div>
   </div>
-</div>
-<div className="group">
-  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 transform group-hover:scale-105">
+  </div>
+
+ <div className="group">   
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 ">
     {/* Image or video */}
   <video src="/video/cafe-video04.mp4" className="w-full h-48 object-cover object-center rounded-lg" autoPlay loop muted playsInline>
 </video>
@@ -73,18 +78,67 @@ const MenuPage = () => {
       </div>
     </div>
   </div>
+  </div>
+           <div className='group'>      
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300">
+    {/* Image or video */}
+    <img src="/img/cafe03.jpg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
+    {/* Content */}
+    <div className="p-4">
+      <h3 className="text-xl font-semibold mb-2">Latte</h3>
+      <p className="text-gray-700">En krämig latte, gjord med en rik espresso och toppad med ångad mjölk för en len och mild smak.</p>
+      {/* Price */}
+   
+      <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
+        67 SEK
+      </div>
+    </div>
+  </div>
 </div>
 
 
+ <div className="group">   
+  {/* <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 transform group-hover:scale-105"> */}
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 transition-all duration-300 ">
+    {/* Image or video */}
+    <img src="/img/gron-smoothie.jpeg" alt="Coffee 1" className="w-full h-48 object-cover object-center rounded-lg" />
+    {/* Content */}
+    <div className="p-4">
+      <h3 className="text-xl font-semibold mb-2">Grön Smoothie</h3>
+      <p className="text-gray-700">En näringsrik grön smoothie gjord med färsk spenat, banan, äpple, ingefära och is.</p>
+      {/* Price */}
+      <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
+        48 SEK
+      </div>
+    </div>
+  </div>
+  </div>
+
+ <div className="group">   
+  <div className="relative bg-white rounded-lg shadow-md overflow-hidden group-hover:bg-gray-200 ">
+    {/* Image or video */}
+  <video src="/video/cafe-video04.mp4" className="w-full h-48 object-cover object-center rounded-lg" autoPlay loop muted playsInline>
+</video>
+    {/* Content */}
+    <div className="p-4">
+      <h3 className="text-xl font-semibold mb-2">Espresso</h3>
+      <p className="text-gray-700">En intensiv och smakrik espresso, gjord på noga utvalda kaffebönor från de bästa kaffeodlingarna i världen.</p>
+      {/* Price */}
+      <div className="group-hover:bg-green-500 absolute top-0 right-0 bg-transparent text-white px-2 py-1 text-sm font-bold rounded-bl-md transition-all duration-300">
+        55 SEK
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  
   
             {/* Coffee item */}
 <div className="card">
-  <img src="/img/cafe04.jpeg" alt="Cappuccino" />
-  <h3 className="text-xl font-semibold mb-2">Cappuccino</h3>
-  <p>
-    En klassisk italiensk kaffe gjord med espresso, ångad mjölk och ett lätt lager av mjölkskum. Perfekt för en mysig
-    eftermiddag.
-  </p>
+  <img src="/img/Masala-Chai-Latte.jpeg" alt="Cappuccino" />
+  <h3 className="text-xl font-semibold mb-4">Chai Latte</h3>
+  <p>En varm och kryddig chai latte, gjord med en blandning av svart te, mjölk och exotiska kryddor.</p>
   <div className="mt-4">
     <span className="text-xl font-bold">39 kr</span>
   </div>
@@ -165,6 +219,10 @@ const MenuPage = () => {
 
             {/* Add more items as needed */}
           </div>
+
+
+{/*-----------*************  Bakverk  -------*********---------*/}
+
           <h2 className="text-4xl font-semibold mt-16 mb-8 text-center">Bakverk</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Pastry item */}
