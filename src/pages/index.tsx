@@ -19,7 +19,9 @@ const HomePage = () => (
           <p className="text-2xl">Upptäck våra utsökta drycker och bakverk i en mysig atmosfär</p>
         </div>
       </div>
-    </section>
+    </section> 
+
+   
 
     <Specialties />
 
