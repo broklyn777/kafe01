@@ -1,12 +1,11 @@
 // pages/index.tsx
 
-
-import CardMeny2, { MenuItem } from '../components/Card-meny2';
-
+import CardMeny from "@/components/Card-meny";
+import CardMeny2, { MenuItem } from "../components/Card-meny2";
 
 type MenuItems = MenuItem[];
 
-const menuItems: MenuItems = require('../menuItems.json');
+const menuItems: MenuItems = require("../menuItems.json");
 
 export default function Home() {
   return (
@@ -19,7 +18,3 @@ export default function Home() {
     </div>
   );
 }
-
-
-
-

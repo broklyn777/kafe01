@@ -1,5 +1,19 @@
 [
   {
+    "name": "Chai Latte",
+    "description": "En varm och kryddig chai latte, gjord med en blandning av svart te, mjölk och exotiska kryddor.",
+    "price": 57,
+    "mediaSrc": "/img/Masala-Chai-Latte.jpeg",
+    "mediaType": "image"
+  },
+  {
+    "name": "Cajun Sallad",
+    "description": "Ljummen Cajun-sallad med kyckling, salladsmix, rödlök, avokado, tomater och honungsmustardressing - smakfullt och näringsrikt.",
+    "price": 65,
+    "mediaSrc": "/video/cafe-video02.mp4",
+    "mediaType": "video"
+  },
+   {
     "name": "Latte",
     "description": "En krämig latte, gjord med en rik espresso och toppad med ångad mjölk för en len och mild smak.",
     "price": 67,
@@ -8,9 +22,23 @@
   },
   {
     "name": "Cappuccino",
-    "description": "En klassisk cappuccino, med en perfekt balans mellan stark espresso och mjuk, fluffig mjölkskum.",
+    "description": "En klassisk italiensk kaffe gjord med espresso, ångad mjölk och ett lätt lager av mjölkskum. Perfekt för en mysig eftermiddag.",
     "price": 65,
-    "mediaSrc": "/video/cafe-video02.mp4",
+    "mediaSrc": "/img/cafe04.jpeg",
+    "mediaType": "image"
+  },
+   {
+    "name": "Espresso",
+    "description": "En krämig latte, gjord med en rik espresso och toppad med ångad mjölk för en len och mild smak.",
+    "price": 67,
+    "mediaSrc": "/video/cafe-video04.mp4",
     "mediaType": "video"
+  },
+     {
+    "name": "Grön Smoothie",
+    "description": "En näringsrik grön smoothie gjord med färsk spenat, banan, äpple, ingefära och is.",
+    "price": 79,
+    "mediaSrc": "/img/gron-smoothie.jpeg",
+    "mediaType": "image"
   }
 ]
