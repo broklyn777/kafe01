@@ -5,8 +5,8 @@ const ContactPage = () => (
     <h1 className="text-4xl font-bold mb-10">Kontakt</h1>
     {/* Lägg till kod här för att visa kontaktinformation för kaféet, inklusive adress, telefonnummer, e-postadress och öppettider. Lägg även till ett kontaktformulär så att besökare enkelt kan skicka frågor eller bokningsförfrågningar */}
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div>
+    <div className="  grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="">
         <h2 className="text-2xl font-bold mb-4">Kontaktinformation</h2>
         <p>
           <strong>Adress:</strong>
@@ -32,7 +32,7 @@ const ContactPage = () => (
         </p>
       </div>
       <div>
-        <h2 className="text-2xl font-bold mb-4">Kontaktformulär</h2>
+        <h2 className="text-2xl text-center font-bold mb-4">Kontaktformulär</h2>
         <ContactForm />
         {/* Lägg till ett kontaktformulär här, med fält för namn, e-post, ämne och meddelande */}
       </div>

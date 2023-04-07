@@ -103,7 +103,7 @@ textarea:focus {
 .card {
     background-size: cover;
     color: white;
-    transition: transform ease 1250ms;
+    transition: transform ease 450ms;
     border-radius: 0.5rem;
     overflow: hidden;
     position: relative;
