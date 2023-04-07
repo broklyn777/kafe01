@@ -1,7 +1,7 @@
 // components/Navbar.tsx
-import React from 'react'
-import Link from 'next/link'
-import HamburgerMenu from './HamburgerMenu' // Lägg till denna import
+import React from "react";
+import Link from "next/link";
+import HamburgerMenu from "./HamburgerMenu"; // Lägg till denna import
 
 const Navbar = () => {
   return (
@@ -11,17 +11,20 @@ const Navbar = () => {
           <Link href="/">Vårt kafé</Link>
         </li>
         <li>
-          <HamburgerMenu /> 
+          <HamburgerMenu />
           {/* Lägg till denna rad */}
-          <ul className="hidden lg:flex space-x-4"> {/* Lägg till "hidden lg:flex" här */}
-          
+          <ul className="hidden lg:flex space-x-4">
+            {" "}
+            {/* Lägg till "hidden lg:flex" här */}
             <li className="mr-4">
-              <Link  href="/meny">Meny</Link>
+              <Link href="/meny">Meny</Link>
             </li>
             <li className="mr-4">
-              <Link  href="/hallbarhet">Hållbart</Link>
+              <Link href="/hallbarhet">Hållbart</Link>
             </li>
-          
+            <li className="mr-4">
+              <Link href="/nyheter">Nyheter</Link>
+            </li>
             <li className="mr-4">
               <Link href="/omoss">Om oss</Link>
             </li>
@@ -32,7 +35,7 @@ const Navbar = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
